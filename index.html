@@ -1,104 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BUILDABRICK</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to BUILDABRICK</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #34344e);
-      color: #fff;
-      min-height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
-    header {
-      padding: 40px 20px;
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
       text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1rem;
+      background: url('data:image/png;base64,REPLACE_WITH_BASE64') no-repeat center center;
+      background-size: contain;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #1e1e2f;
       margin-bottom: 0.5rem;
-      color: #f9ca24;
     }
 
     p {
-      font-size: 1.2rem;
-      color: #ddd;
-      max-width: 600px;
-      margin: 0 auto;
+      color: #606060;
+      margin-bottom: 2rem;
     }
 
-    .main-content {
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
+    .button {
+      background-color: #0c132b;
+      color: white;
+      border: none;
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
     }
 
-    .cta {
-      margin-top: 40px;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background: #f9ca24;
-      color: #1e1e2f;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 15px 30px;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background: #ffdd57;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background-color: rgba(0, 0, 0, 0.2);
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.2rem;
-      }
+    .button:hover {
+      background-color: #1b2647;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>BUILDABRICK</h1>
-    <p>Design, build, and launch your custom digital experiences — brick by brick.</p>
-  </header>
-
-  <div class="main-content">
-    <div>
-      <p>Our platform empowers creators, makers, and builders to bring their ideas to life faster and easier than ever before. Whether you're prototyping or scaling, BUILDABRICK gives you the tools you need.</p>
-      <div class="cta">
-        <a href="https://app--buildabrick-4f47d4e0.base44.app" class="cta-button">Launch App</a>
-      </div>
-    </div>
+  <div class="container">
+    <div class="logo"></div>
+    <h1>Welcome to BUILDABRICK</h1>
+    <p>Start building your ideas, share your creations, and collaborate with others in our community.</p>
+    <button class="button" onclick="window.location.href='https://app--buildabrick-4f47d4e0.base44.app/Forum'">Enter the Forum</button>
   </div>
-
-  <footer>
-    &copy; 2025 BUILDABRICK. All rights reserved.
-  </footer>
-
 </body>
 </html>
