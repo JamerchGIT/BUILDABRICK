@@ -25,14 +25,10 @@
       max-width: 400px;
     }
 
-    .logo {
+    .logo img {
       width: 80px;
-      height: 80px;
-      margin: 0 auto 1rem;
-      background: url('data:image/png;base64,REPLACE_WITH_BASE64') no-repeat center center;
-      background-size: contain;
-      border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      height: auto;
+      margin-bottom: 1rem;
     }
 
     h1 {
@@ -45,6 +41,7 @@
     p {
       color: #606060;
       margin-bottom: 2rem;
+      font-size: 0.95rem;
     }
 
     .button {
@@ -66,9 +63,11 @@
 </head>
 <body>
   <div class="container">
-    <div class="logo"></div>
+    <div class="logo">
+      <img src="data:image/png;base64,REPLACE_WITH_BASE64" alt="Buildabrick Logo">
+    </div>
     <h1>Welcome to BUILDABRICK</h1>
-    <p>Start building your ideas, share your creations, and collaborate with others in our community.</p>
+    <p>Join the BUILDABRICK community — where builders connect, share their creations, learn new techniques, exchange feedback, buy & sell, and get help. Whether you're showing off your latest build or exploring advanced tricks, there's a place for everyone.</p>
     <button class="button" onclick="window.location.href='https://app--buildabrick-4f47d4e0.base44.app/Forum'">Enter the Forum</button>
   </div>
 </body>
